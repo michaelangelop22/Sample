@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Candice</h2>                 
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DEISGN</a></li>
+                    <li><a href="#">CONTACT</a></li>                   
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="btn">Search</button></a>
+                 </div>
+             </div>
+
+             <div class="content">
+                <h1><span>Web Design & <br>Development<br>Course</h1>
+                    
+                <p class="par">This handout will help you understand how paragraphs are formed, 
+                    <br> how to develop stronger paragraphs, 
+                    <br> and how to completely and clearly express your ideas.</span></p>
+
+                    <button class="cn"><a href="#">JOIN US</a> </button>     
+             </div>
+
+             <div class="form">
+                <div class="button-box">
+                    <div id="btn2"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>    
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password"required>
+                    <div>
+                        <input type="checkbox" class="check-box"><span>Rember Password</span>
+                    </div>
+                    <button class="btnn"><a class="font" ref="#">Login</a></button>
+                    <div class="icon">
+                        <p class="liw">Log in with</p>
+                        <a href="https://www.facebook.com/Angeloooobelen/"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>                           
+                    </div>
+                    </form>
+                    
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="Enter Email" required>
+                        <input type="password" class="input-field" placeholder="Enter Password"required>
+                        <input type="password" class="input-field" placeholder="Confirm Password" required>
+                        <div class="box">
+                            <input type="checkbox" class="check-box" required><a href="#">Accept Terms and Conditons.</a>
+                        </div>
+                        <button class="btnn"><a class="font1" href="#">Register</a></button>
+                        </form>   
+                        
+              
+
+            </div>
+         </div>
+         <script>
+            var x = document.getElementById("login")
+            var y = document.getElementById("register")
+            var z = document.getElementById("btn2")
+    
+            function register(){
+                x.style.left ="-350px";
+                y.style.left ="20px";
+                z.style.left ="110px";
+            }
+            function login(){
+                x.style.left ="20px";
+                y.style.left ="350px";
+                z.style.left ="0px";
+            }
+    
+         </script>
+     </div>
+   
+     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
